@@ -78,7 +78,8 @@ function calculate() {
         operatorIndex++;
         currentOperator = operatorArray[operatorIndex];
       } else if (currentOperator == '%') {
-        resultNum %= numberArray[index];
+        // resultNum %= numberArray[index];
+        resultNum /= 100;
         operatorIndex++;
         currentOperator = operatorArray[operatorIndex];
       }
